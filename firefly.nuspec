@@ -4,7 +4,7 @@
     <id>firefly</id>
     <title>firefly (Install)</title>
     <version>0.3.1</version>
-    <authors>gotakk</authors>
+    <authors>IOTA Foundation</authors>
     <owners>gotakk</owners>
     <projectUrl>https://github.com/iotaledger/firefly</projectUrl>
     <docsUrl>https://github.com/iotaledger/firefly/blob/develop/packages/desktop/README.md</docsUrl>
