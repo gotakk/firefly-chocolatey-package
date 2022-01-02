@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64         = 'https://dl.firefly.iota.org/firefly-desktop-1.3.1.exe'
+$url64         = 'https://dl.firefly.iota.org/firefly-desktop-1.3.2.exe'
 
 $GoShimmerPackageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -8,7 +8,7 @@ $GoShimmerPackageArgs = @{
   fileType      = 'EXE'
   url64bit      = $url64
   softwareName  = 'firefly*'
-  checksum64    = 'b3b25b88e88889882c93a9d95cdd6a4ecd995bd0eff892a390604a32d189c443'
+  checksum64    = '9ef4be6d365f1c1e3164136af2c98fc654e4895f1b0efc33d9b892002b47630b'
   checksumType64= 'sha256'
   validExitCodes= @(0, 3010, 1641)
 }
