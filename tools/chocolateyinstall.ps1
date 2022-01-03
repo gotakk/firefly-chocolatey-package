@@ -1,13 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
-$toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64         = 'https://dl.firefly.iota.org/firefly-desktop-1.3.2.exe'
+$url64         = 
 
 $FireflyPackageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
-  fileType      = 'EXE'
-  silentArgs    = '/S'
-  url64bit      = $url64
+  fileType      = 'exe'
+  silentArgs    = '/S --force-run'
+  url64bit      = 'https://dl.firefly.iota.org/firefly-desktop-1.3.2.exe'
   softwareName  = 'firefly*'
   checksum64    = '9ef4be6d365f1c1e3164136af2c98fc654e4895f1b0efc33d9b892002b47630b'
   checksumType64= 'sha256'
